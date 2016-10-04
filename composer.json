@@ -1,0 +1,22 @@
+{
+    "name": "xafardero/validate-ccc",
+    "description": "Validate CCC Cuenta Bancaria",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CccValidate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "xaf",
+            "email": "xavier.mabras@protonmail.ch"
+        }
+    ]
+}
