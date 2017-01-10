@@ -19,7 +19,7 @@ class CccTest extends PHPUnit_Framework_TestCase
         $cuenta = '2103991515';
         $dc = '12';
 
-        $this->assertEquals(true, Ccc::validate($entidad, $oficina, $cuenta, $dc));
+        $this->assertEquals(true, Ccc::validate($entidad, $oficina, $dc, $cuenta));
     }
 
     public function testWrongCcc()
@@ -29,6 +29,6 @@ class CccTest extends PHPUnit_Framework_TestCase
         $cuenta = '7081002373';
         $dc = '47';
 
-        $this->assertEquals(false, Ccc::validate($entidad, $oficina, $cuenta, $dc));
+        $this->assertEquals(false, Ccc::validate($entidad, $oficina, $dc, $cuenta));
     }
 }
